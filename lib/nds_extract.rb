@@ -25,10 +25,12 @@ def gross_for_director(d)
 end
 
 def list_of_directors(source)
-  hash = {}
+  result = {}
   i = 0 
   while i < source.length do 
-    source[:name]
+    result += source[i][:name]
+    i += 1
+  end
     
 end
 
