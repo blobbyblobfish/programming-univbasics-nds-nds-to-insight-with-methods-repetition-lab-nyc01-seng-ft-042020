@@ -45,12 +45,15 @@ def total_gross(source)
   # returned by directors_totals, and add it to a running total. When done,
   # return the total
   
-  counter = 0 
-  total = 0
-  while counter < directors_totals.length 
-  total +=  directors_names[list_of_directors[counter]][:gross]
-end
-  total
+    counter = 0
+    grand_total = 0
+    director_total = directors_totals(source) 
+    director_list = list_of_directors(source)
+    while counter < director_list.length do
+      grand_total += director_total[director_list[counter]]
+      counter += 1
+    end
+    grand_total
 end
 
 
