@@ -28,7 +28,7 @@ def list_of_directors(source)
   result = {}
   i = 0 
   while i < source.length do 
-    result += source[i][:name]
+    result = source[i][:name]
     i += 1
   end
     
